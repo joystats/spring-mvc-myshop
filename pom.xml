@@ -1,4 +1,11 @@
 <project>
+    
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>RELEASE</version>
+    </parent>
+    
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.kline</groupId>
     <artifactId>myshop</artifactId>
@@ -17,6 +24,13 @@
                 <directory>java/data</directory>
             </resource>
         </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
+            </plugin>
+        </plugins>
     </build>
     
     <dependencies>
